@@ -7,7 +7,7 @@ namespace StudentRecord
         static void Main(string[] args)
         {
             //Creating an Instance of first Student Record       
-            var tysonScore = new StudentData("Edesiri", "Ovwori", 28, "SS3", 0, 41, 65, 65, 76, 88, 87, 90, 81);
+            var tysonScore = new StudentData("Tyson", "Oghenevwere", 28, "SS3", 0, 41, 65, 65, 76, 88, 87, 90, 81);
 
             //Calling the method of Total score in the StudentData class by using the instantiated values of the object tysonScore  
             var tysonTotalScore = tysonScore.Total(tysonScore.subjectOneScore, tysonScore.subjectTwoScore, tysonScore.subjectThreeScore, tysonScore.subjectFourScore,
