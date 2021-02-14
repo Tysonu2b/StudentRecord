@@ -6,7 +6,7 @@ namespace StudentRecord
     {
         static void Main(string[] args)
         {
-                    
+            //Creating an Instance of first Student Record       
             var tysonScore = new StudentData("Edesiri", "Ovwori", 28, "SS3", 0, 41, 65, 65, 76, 88, 87, 90, 81);
 
             //Calling the method of Total score in the StudentData class by using the instantiated values of the object tysonScore  
@@ -19,8 +19,11 @@ namespace StudentRecord
                tysonScore.subjectFiveScore, tysonScore.subjectSixScore, tysonScore.subjectSevenScore, tysonScore.subjectEightScore,
                tysonScore.subjectNineScore);
 
-         
+
             //Introductory Write Up for  before Tyson's Grade is Displayed
+            Console.WriteLine("Student Record 1");
+            Console.WriteLine();
+            Console.WriteLine("Class Level: " + tysonScore.classLevel + " | Student's Age: " + tysonScore.age);
             Console.WriteLine("Hello" + " " + tysonScore.firstName + " " + tysonScore.lastName + " Your Exam Scores and Grades are as follow:" );
             Console.WriteLine("................................................");
 
@@ -40,10 +43,10 @@ namespace StudentRecord
 
 
             //New Student Record Begins from Here
-
+            Console.WriteLine("Student Record 2");
 
             // Instantiation of the Student Data in the Main to Create a new Student Record
-            var edesiriData = new StudentData("Edesiri", "Ovwori", 28, "SS3", -60, 19, 65, 44, 76, 69, 87, 90, 39);
+            var edesiriData = new StudentData("Edesiri", "Ovwori", 24, "SS2", 60, 19, 65, 44, 76, 69, 87, 90, 39);
 
 
            //Calling the method of Total score in the StudentData class by using the instantiated values of the object edesiriData  
@@ -58,6 +61,7 @@ namespace StudentRecord
 
 
             //Introductory Write Up for  before Edesiri's Grade is Displayed
+            Console.WriteLine("Class Level: " + edesiriData.classLevel + " | Student's Age: " + edesiriData.age);
             Console.WriteLine("Hello" + " " + edesiriData.firstName + " " + edesiriData.lastName + " Your Exam Scores and Grades are as follow:");
             Console.WriteLine("................................................");
             
